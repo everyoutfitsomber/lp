@@ -35,7 +35,8 @@ body {
 #page-hero {
   width: 100%;
   background: #FFD3B8;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -49,7 +50,7 @@ h1 {
 
 h2 {
   font-family: "Recoleta";
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .rating-stats {
@@ -64,7 +65,7 @@ a.btn:link, a.btn:visited {
   background-color: #C2764A;
   border-radius: 30px;
   color: #FFFFFF;
-  padding: 14px 25px;
+  padding: 14px 40px;
   font-size: 18px;
   letter-spacing: 1px;
   text-align: center;
@@ -76,8 +77,19 @@ a.btn:hover, a.btn:active {
   background-color: #000000;
 }
 
+.hero-description {
+  font-size: 18px;
+  padding: 0 5% 10px 5%;
+}
+.text-under-btn {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
 .sticky-div {
   position: relative;
   width: 100%;
   padding: 10px 0;
+  background: #FFD3B8;
 }
