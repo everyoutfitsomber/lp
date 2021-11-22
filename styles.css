@@ -55,7 +55,7 @@ body {
 #page-hero {
   width: 100%;
   background: #FFD3B8;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -75,7 +75,7 @@ h2 {
 
 .rating-stars {
   color: #B87D00;
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 15px;
 }
 
