@@ -15,21 +15,69 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+/* Responsive */
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* Main */
 body {
   font-family: "Avenir";
 }
 
-.page-header {
+#page-header {
   width: 100%;
   background: #333;
+  text-align: center;
+}
+
+#page-hero {
+  width: 100%;
+  background: #FFD3B8;
+  padding-top: 20px;
+  text-align: center;
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 14px;
   color: #FFD3B8;
-  letter-spacing: 12px;
+  letter-spacing: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+h2 {
+  font-family: "Recoleta";
+  font-size: 24px;
+}
+
+.rating-stats {
+  
+}
+
+.rating-stats .emphasis {
+  font-weight: 700;
+}
+
+a.btn:link, a.btn:visited {
+  background-color: #C2764A;
+  border-radius: 30px;
+  color: #FFFFFF;
+  padding: 14px 25px;
+  font-size: 18px;
+  letter-spacing: 1px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.btn:hover, a.btn:active {
+  background-color: #000000;
+}
+
+.sticky-div {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
 }
