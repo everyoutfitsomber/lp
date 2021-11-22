@@ -15,15 +15,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-/* Fonts */
-@font-face {
-    font-family: 'recoletaregular';
-    src: url('../fonts/recoleta_regular-webfont.woff2') format('woff2'),
-         url('../fonts/recoleta_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /* Responsive */
 img {
