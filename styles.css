@@ -36,11 +36,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive */
-.full-width-img-container {
-  position: relative;
-  width: 100%;
-}
-
 .full-width-img {
   max-width: 100%;
   height: auto;
@@ -126,7 +121,7 @@ a.btn:hover, a.btn:active {
   text-align: center;
 }
 
-.section-wrapper {
+.section-sparkle {
   text-align: center;
   padding-top: 40px;
   padding-right: 20px;
@@ -134,7 +129,8 @@ a.btn:hover, a.btn:active {
   padding-left: 20px;
 }
 
-.section-wrapper p {
+.section-sparkle p {
+  font-size: 17px;
   margin-left: 10%;
   margin-right: 10%;
 }
