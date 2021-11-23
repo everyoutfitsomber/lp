@@ -120,3 +120,35 @@ a.btn:hover, a.btn:active {
   padding: 10px 0;
   background: #FFD3B8;
 }
+
+.testimonial {
+  text-align: center;
+  padding: 30px 20px 40px 20px;
+}
+
+.testimonial:before {
+  content: '\201C';
+  font-size: 60px;
+  font-family: 'recoletamedium';
+  height: 1;
+}
+
+.testimonial-content {
+  margin-top: -15px;
+  font-family: 'recoletamedium';
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.testimonial-author {
+  color: #333;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.testimonial-close {
+  margin-top: 25px;
+  border-bottom: 1px solid #CCC;
+  margin-left: 25%;
+  margin-right: 25%;
+}
