@@ -36,8 +36,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive */
-img {
+.full-width-img-container {
+  position: relative;
   width: 100%;
+}
+
+.full-width-img {
+  max-width: 100%;
   height: auto;
 }
 
@@ -71,6 +76,13 @@ h1 {
 h2 {
   font-family: 'recoletamedium';
   font-size: 32px;
+}
+
+h3 {
+  font-family: 'recoletamedium';
+  font-size: 28px;
+  line-height: 1.4;
+  padding-bottom: 20px;
 }
 
 .rating-stars {
@@ -114,6 +126,19 @@ a.btn:hover, a.btn:active {
   text-align: center;
 }
 
+.section-wrapper {
+  text-align: center;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.section-wrapper p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .testimonial {
   text-align: center;
   padding: 30px 20px 40px 20px;
@@ -144,4 +169,8 @@ a.btn:hover, a.btn:active {
   border-bottom: 1px solid #CCC;
   margin-left: 25%;
   margin-right: 25%;
+}
+
+.down-arrow {
+  width: 20px;
 }
