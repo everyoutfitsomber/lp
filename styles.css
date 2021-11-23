@@ -114,13 +114,6 @@ a.btn:hover, a.btn:active {
   text-align: center;
 }
 
-.sticky-div {
-  position: relative;
-  width: 100%;
-  padding: 10px 0;
-  background: #FFD3B8;
-}
-
 .testimonial {
   text-align: center;
   padding: 30px 20px 40px 20px;
