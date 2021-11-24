@@ -124,9 +124,9 @@ a.btn:hover, a.btn:active {
 .section-main {
   text-align: center;
   line-height: 1.5;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   padding-left: 20px;
 }
 
@@ -134,9 +134,13 @@ a.btn:hover, a.btn:active {
   font-size: 17px;
 }
 
+.pale-yellow-bg {
+  background-color: #faf0e4;
+}
+
 .testimonial {
   text-align: center;
-  padding: 30px 20px 40px 20px;
+  padding: 30px 20px 50px 20px;
 }
 
 .testimonial:before {
@@ -166,8 +170,16 @@ a.btn:hover, a.btn:active {
 .testimonial-close {
   margin-top: 25px;
   border-bottom: 1px solid #CCC;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.horizontal-line {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #CCC;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 .down-arrow {
@@ -175,5 +187,14 @@ a.btn:hover, a.btn:active {
 }
 
 .text-center {
+  text-align: center;
+}
+
+.circle {
+  display: inline-block;
+  background: lightblue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   text-align: center;
 }
