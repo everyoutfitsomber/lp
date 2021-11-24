@@ -121,15 +121,16 @@ a.btn:hover, a.btn:active {
   text-align: center;
 }
 
-.section-sparkle {
+.section-main {
   text-align: center;
+  line-height: 1.5;
   padding-top: 40px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
 }
 
-.section-sparkle p {
+.section-main p {
   font-size: 17px;
 }
 
@@ -152,6 +153,10 @@ a.btn:hover, a.btn:active {
   line-height: 1.5;
 }
 
+.testimonial-smaller-text {
+  font-size: 21px;
+}
+
 .testimonial-author {
   color: #333;
   font-size: 14px;
@@ -167,4 +172,8 @@ a.btn:hover, a.btn:active {
 
 .down-arrow {
   width: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
