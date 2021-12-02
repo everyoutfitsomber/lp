@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Main */
 body {
   font-family: "Avenir";
+  color: #111;
 }
 
 #page-header {
@@ -182,8 +183,19 @@ a.btn:hover, a.btn:active {
   margin-right: 35%;
 }
 
+.to-scale-studs {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #CCC;
+  width: 250px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .down-arrow {
-  width: 20px;
+  color: #FFD3B8;
+  font-size: 40px;
 }
 
 .text-center {
@@ -192,10 +204,32 @@ a.btn:hover, a.btn:active {
 
 .circle {
   display: inline-block;
-  background: lightblue;
+  background: #696969;
   border-radius: 50%;
   width: 18px;
   height: 18px;
-  margin-left: auto;
-  margin-right: auto
+}
+
+.circle-left {
+  margin-right: 10px;
+}
+
+.circle-right {
+  margin-left: 10px;
+}
+
+.black {
+  color: #111;
+}
+
+.brown {
+  color: #C2764A;
+}
+
+.light-grey {
+  color: #696969;
+}
+
+#accurate {
+  display: none;
 }
