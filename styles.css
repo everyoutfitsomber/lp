@@ -135,6 +135,10 @@ a.btn:hover, a.btn:active {
   font-size: 17px;
 }
 
+.section-main-left-align {
+  text-align: left;
+}
+
 .pale-yellow-bg {
   background-color: #faf0e4;
 }
@@ -232,4 +236,16 @@ a.btn:hover, a.btn:active {
 
 #accurate {
   display: none;
+}
+
+table td { 
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+table td.td-col-1 {
+  font-weight: 700;
+  min-width: 120px;
 }
