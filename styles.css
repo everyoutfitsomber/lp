@@ -238,6 +238,10 @@ a.btn:hover, a.btn:active {
   display: none;
 }
 
+table {
+  padding-bottom: 10px;
+}
+
 table td { 
   display: table-cell;
   vertical-align: top;
