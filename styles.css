@@ -269,3 +269,10 @@ table td.td-col-1 {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
+}
+
+.below-image-text {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
