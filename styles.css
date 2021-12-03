@@ -253,3 +253,10 @@ table td.td-col-1 {
   font-weight: 700;
   min-width: 120px;
 }
+
+.small-popup-button {
+  color: #FFFFFF;
+  background-color: #c2764aa3;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
