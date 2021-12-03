@@ -81,6 +81,10 @@ h3 {
   padding-bottom: 30px;
 }
 
+h4 {
+  font-size: 22px;
+}
+
 .rating-stars {
   color: #B87D00;
   font-size: 22px;
@@ -135,9 +139,12 @@ a.btn:hover, a.btn:active {
   font-size: 17px;
 }
 
-.section-main-left-align {
+.section-text-left {
   text-align: left;
+  padding-left: 25px
 }
+
+
 
 .pale-yellow-bg {
   background-color: #faf0e4;
@@ -239,7 +246,9 @@ a.btn:hover, a.btn:active {
 }
 
 table {
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
 }
 
 table td { 
