@@ -85,6 +85,11 @@ h4 {
   font-size: 22px;
 }
 
+h5 {
+  font-family: 'recoletaregular';
+  font-size: 22px;
+}
+
 .rating-stars {
   color: #B87D00;
   font-size: 22px;
@@ -276,4 +281,8 @@ table td.td-col-1 {
   color: #333;
   margin-top: 8px;
   padding-bottom: 30px;
+}
+
+.features {
+  margin-top: 50px;
 }
