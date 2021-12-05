@@ -125,9 +125,10 @@ a.btn:hover, a.btn:active {
   padding-bottom: 20px;
   line-height: 1.5;
 }
+
 .under-btn {
   margin-top: 35px;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
 }
 
