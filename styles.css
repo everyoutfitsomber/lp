@@ -293,7 +293,6 @@ table td.td-col-1 {
 }
 
 #footer {
-  font-size: 18px;
   color: #FFFFFF;
   background-color: #303842;
   padding: 50px 20px 30px 20px;
@@ -311,7 +310,7 @@ table td.td-col-1 {
 }
 
 .footer-item {
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
 .footer-item a,
