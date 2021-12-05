@@ -298,6 +298,13 @@ table td.td-col-1 {
   padding: 50px 20px 30px 20px;
 }
 
+#footer-copyright {
+  color: #FFFFFF;
+  background-color: #12171d;
+  padding: 20px;
+  font-size: 15px;
+}
+
 .footer-section {
   padding-bottom: 30px;
 }
@@ -306,14 +313,15 @@ table td.td-col-1 {
   padding-bottom: 10px;
 }
 
-.footer-item a, .footer-item a:active, .footer-item a:hover, .footer-item a:visited {
+.footer-item a,
+.footer-item a:active,
+.footer-item a:hover,
+.footer-item a:visited,
+#footer-copyright a,
+#footer-copyright a:active,
+#footer-copyright a:hover,
+#footer-copyright a:visited {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.copyright-notice {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 15px;
-  text-align: center;
-}
