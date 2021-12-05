@@ -299,6 +299,22 @@ table td.td-col-1 {
   padding: 50px 20px 30px 20px;
 }
 
+.footer-section {
+  padding-bottom: 30px;
+}
+
 .footer-item {
   padding-bottom: 10px;
+}
+
+.footer-item a, .footer-item a:active, .footer-item a:hover, .footer-item a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.copyright-notice {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
 }
