@@ -125,8 +125,8 @@ a.btn:hover, a.btn:active {
   padding-bottom: 20px;
   line-height: 1.5;
 }
-.text-under-btn {
-  margin-top: 10px;
+.under-btn {
+  margin-top: 35px;
   font-size: 14px;
   text-align: center;
 }
@@ -285,4 +285,8 @@ table td.td-col-1 {
 
 .features {
   margin-top: 50px;
+}
+
+.dash {
+  color: #C2764A;
 }
