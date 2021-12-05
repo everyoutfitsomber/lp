@@ -293,6 +293,7 @@ table td.td-col-1 {
 }
 
 #footer {
+  font-size: 18px;
   color: #FFFFFF;
   background-color: #303842;
   padding: 50px 20px 30px 20px;
@@ -302,7 +303,7 @@ table td.td-col-1 {
   color: #FFFFFF;
   background-color: #12171d;
   padding: 20px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footer-section {
@@ -316,11 +317,7 @@ table td.td-col-1 {
 .footer-item a,
 .footer-item a:active,
 .footer-item a:hover,
-.footer-item a:visited,
-#footer-copyright a,
-#footer-copyright a:active,
-#footer-copyright a:hover,
-#footer-copyright a:visited {
+.footer-item a:visited {
   color: #FFFFFF;
   text-decoration: none;
 }
