@@ -291,3 +291,10 @@ table td.td-col-1 {
 .dash {
   color: #C2764A;
 }
+
+#footer {
+  color: #FFFFFF;
+  background-color: #303842;
+  height: 300px;
+  padding: 30px 20px 30px 20px;
+}
