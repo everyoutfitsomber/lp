@@ -350,7 +350,7 @@ table td.td-col-1 {
   left: 0;
   right: 0;
   width: 100%;
-  background: #FFD3B8;
+  background: #faf0e4;
   opacity: 0.9;
   padding-bottom: 15px;
   border-bottom: 1px solid #a7a7a7;
@@ -398,5 +398,5 @@ a.offer-price-explanation:visited {
   color: #000;
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px dotted #000;
+  border-bottom: 1px dotted #C2764A;
 }
