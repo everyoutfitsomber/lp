@@ -351,6 +351,7 @@ table td.td-col-1 {
   right: 0;
   width: 100%;
   background: #FFFFFF;
+  opacity: 0.9;
   padding-bottom: 15px;
   border-bottom: 1px solid #a7a7a7;
 }
@@ -363,7 +364,7 @@ table td.td-col-1 {
 
 .sticky-header-right-col {
   width: 45%;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-right: 18px;
   text-align: right;
 }
