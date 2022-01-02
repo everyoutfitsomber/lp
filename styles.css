@@ -352,7 +352,6 @@ table td.td-col-1 {
   width: 100%;
   background: #faf0e4;
   opacity: 0.95;
-  backdrop-filter: blur(20px);
   padding-bottom: 15px;
   border-bottom: 1px solid #a7a7a7;
 }
