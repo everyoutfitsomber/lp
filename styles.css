@@ -299,8 +299,14 @@ table td.td-col-1 {
   padding-bottom: 30px;
 }
 
+.feature-number {
+  font-size: 18px;
+  font-family: 'recoletaregular';
+}
+
 .features {
   margin-top: 50px;
+  padding-bottom: 20px;
 }
 
 .dash {
