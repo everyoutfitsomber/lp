@@ -285,11 +285,11 @@ table td.td-col-1 {
 }
 
 .small-popup-button {
-  color: #FFFFFF;
-  background-color: #c2764aa3;
+  color: #9e9e9e;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
+  border: 1px solid #9e9e9e;
 }
 
 .below-image-text {
@@ -406,4 +406,41 @@ a.offer-price-explanation:visited {
   font-size: 14px;
   text-decoration: none;
   border-bottom: 1px dotted #C2764A;
+}
+
+.header--fixed {
+  visibility: visible;
+  position: fixed;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.header--fadeout {
+  visibility: hidden;
+  animation: fadeOut 0.5s ease-in-out;
+  position: fixed;
+  transition: visibility 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: -30px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  to {
+    opacity: 0;
+    margin-top: -30px;
+  }
 }

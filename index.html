@@ -5,11 +5,17 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="sticky-header">
+    <div id="sticky-header" class="header--fadeout">
       <div class="sticky-header-left-col">
         <div class="sticky-header-price">
-          <div class="sticky-header-content-line-1"><span class="full-price">$67</span> <span class="offer-price">$47</span><span class="free-shipping"> + free shipping</span></div>
-          <div class="sticky-header-content-line-2"><a href="" class="offer-price-explanation">Why the $20 saving?</a></div>
+          <div class="sticky-header-content-line-1">
+            <span class="full-price">$67</span>
+            <span class="offer-price">$47</span
+            ><span class="free-shipping"> + free shipping</span>
+          </div>
+          <div class="sticky-header-content-line-2">
+            <a href="" class="offer-price-explanation">Why the $20 saving?</a>
+          </div>
         </div>
       </div>
       <div class="sticky-header-right-col">
@@ -53,25 +59,28 @@
     </section>
     <section class="section-main">
       <h3>Unmatched Sparkle.<br> Guaranteed.</h3>
-      <p>For small studs, sparkle is<br> EVERYTHING.</p>
+      <p>Our secret?<br> <strong>Teeny Tiny Bezels</strong></p>
+      <div class="down-arrow">&darr;</div>
+      <p>You see...<br> For small studs, sparkle is<br> EVERYTHING.</p>
       <div class="down-arrow">&darr;</div>
       <p><em>And we have 56% more<br> sparkle than anyone else...</em></p>
       <div class="down-arrow">&darr;</div>
       <p>How?</p>
-      <p>Because we spent 7 months<br> developing a technique to create...</p>
-      <p><strong><span class="dotted-underline">The Thinnest Bezels Ever<br> on a Set of Earrings.</span></strong></p>
+      <p>By using teeny-tiny bezels.</p>
+      <p>In fact, we spent 7 months<br> developing a special technique<br> to make our bezels leaf-thin.</p>
       <div class="down-arrow">&darr;</div>
-      <p>This means for any given stud size,<br> we can house a larger gemstone.</p>
+      <p>Meaning we can house a 56% larger<br> gemstone than anybody else.</p>
       <div class="down-arrow">&darr;</div>
       <p>More gemstone = more sparkle.<br> <em>Unmatched sparkle.</em></p>
-      <img style="margin-top: 80px;" class="responsive" src="images/tiny-bezels@3x.png">
-      <div class="below-image-text">Our bezels are so thin, we had a hard time photographing them! <strong>So, we commissioned this magnified hand-drawn artist impression to illustrate the tiny bezels.</strong> At actual size, all you see face-on is gemstone, and sparkle!</div>
-      <span class="small-popup-button" style="padding-top: 6px; padding-bottom: 6px;">more about bezels &#8594;</span>
+      <img style="margin-top: 80px; margin-bottom: 40px;" class="responsive" src="images/tinystuds-bezel-comparison@3x.png">
+      <p>Standard-sized bezels can be stunning on larger jewelry pieces. But on small dainty earrings, the gemstone ends up being too small and lacklustre.</p>
+      <p style="padding-bottom: 20px;">Leaf-thin bezels are the secret to our Signature studs' outstanding sparkle.</p>
+      <span class="small-popup-button" style="padding-top: 6px; padding-bottom: 6px;">more about our bezels &#8594;</span>
     </section>
     <div class="testimonial">
       <article>
         <div class="testimonial-content testimonial-smaller-text">
-          These things POP!<br> Out of all my earrings, these<br> get the most compliments! 🥰
+          These things POP!<br> They get tons of compliments!<br> 🥰
         </div>
         <div class="testimonial-author">
           Sofia DeAngelo (San Diego, U.S.)
@@ -90,6 +99,21 @@
         <div class="testimonial-close"></div>
       </article>
     </div>
+
+    <section class="section-main" style="padding-bottom: 70px; background: #FFD3B8;">
+      <h3>Get Your Pair Now</h3>
+      <p>1 x Pair Signature Round Studs</p>
+      <div class="call-to-action">
+        <a href="" class="btn btn-large">GET YOURS NOW &#8594;</a>
+        <div class="under-btn">
+          <div class="text-under-btn">Free shipping</div>
+          <div class="dash">&#8212;</div>
+          <div class="text-under-btn">In stock, ready to ship</div>
+          <div class="dash">&#8212;</div>
+          <div class="text-under-btn">Next-day dispatch from our Studio</div>
+        </div>
+      </div>
+    </section>
 
     <section class="section-main pale-yellow-bg">
       <h3>The Perfect Dainty Size</h3>
@@ -154,7 +178,7 @@
           </tr>
         </tbody>
       </table>
-
+      <p><strong>Other stats:</strong></p>
       <p>Time spent developing: 7 months</p>
       <p>Number of prototypes: 12</p>
       <p>Number of design choices: 100+</p>
@@ -278,6 +302,27 @@
       </div>
       <div id="footer-copyright">&#169; Sienna Seven LLC</div>
     </footer>
+
+  <!-- 
+    Script to make sticky header appear on scroll.
+    Set to appear after first on-ear shot has been scrolled past.
+  -->
+  <script>
+    window.onscroll = function () {
+      fixedHeader();
+    };
+
+    function fixedHeader() {
+      if (
+        document.body.scrollTop > 1300 ||
+        document.documentElement.scrollTop > 1300
+      ) {
+        document.getElementById("sticky-header").className = "header--fixed";
+      } else {
+        document.getElementById("sticky-header").className = "header--fadeout";
+      }
+    }
+  </script>
 
   <!-- Earring sizing API call -->
   <script async src="https://cloud.51degrees.com/api/v4/AQQnLb3NOGPwouu02Ug.js"></script>
