@@ -87,7 +87,8 @@ h4 {
 
 h5 {
   font-family: 'recoletaregular';
-  font-size: 22px;
+  font-size: 28px;
+  padding-bottom: 25px;
 }
 
 .rating-stars {
