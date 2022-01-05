@@ -394,14 +394,7 @@ table td.td-col-1 {
   font-size: 12px;
 }
 
-.sticky-header-content-line-2 {
-  margin-top: -5px;
-}
-
-a.offer-price-explanation:link,
-a.offer-price-explanation:active,
-a.offer-price-explanation:hover,
-a.offer-price-explanation:visited {
+.offer-price-explanation {
   color: #000;
   font-size: 14px;
   text-decoration: none;
@@ -471,7 +464,7 @@ a.offer-price-explanation:visited {
 .modal-dialog {
   position: relative;
   max-width: 800px;
-  max-height: 80vh;
+  max-height: 84vh;
   border-radius: 5px;
   background: #faf0e4;
   overflow: auto;
@@ -496,10 +489,23 @@ a.offer-price-explanation:visited {
  
 .modal-header .close-modal {
   font-size: 24px;
+  color: #000;
   border-radius: 10px;
   background: #faf0e4;
+  cursor: pointer;
 }
  
 .modal p + p {
   margin-top: 1rem;
 }
+
+.modal-back-button {
+  background: #C2764A;
+  color: #FFF;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 10px;
