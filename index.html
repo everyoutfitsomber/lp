@@ -14,12 +14,28 @@
             ><span class="free-shipping"> + free shipping</span>
           </div>
           <div class="sticky-header-content-line-2">
-            <a href="" class="offer-price-explanation">Why the $20 saving?</a>
+            <a href="#" class="offer-price-explanation" data-open="modal1">Why the $20 saving?</a>
           </div>
         </div>
       </div>
       <div class="sticky-header-right-col">
         <a href="" class="btn btn-small">Checkout &#8594;</a>
+      </div>
+    </div>
+    <!-- Modal content: Sticky Header -->
+    <div class="modal" id="modal1">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          $20 Off For A Limited Time
+          <button class="close-modal" aria-label="close modal" data-close>✕</button>
+        </header>
+        <section class="modal-content">
+          <p>We're currently testing some new packaging concepts.</p> 
+          <p>By temporarily lowering the price, we get more orders, which helps us test out our packaging processes more realistically.</p>
+          <p>You'll also receive a short, optional packaging survey a few days after your earrings arrive.</p>
+          <p>And in the spirit of reciprocity, we've found that we get more survey feedback when we offer a good deal.</p>
+          <p><strong>Offer ends once we've completed our packaging experiment.</strong></p>
+        </section>
       </div>
     </div>
     <header id="header">
@@ -322,6 +338,39 @@
         document.getElementById("sticky-header").className = "header--fadeout";
       }
     }
+  </script>
+
+  <!-- Modal Boxes -->
+  <script>
+    const openEls = document.querySelectorAll("[data-open]");
+    const closeEls = document.querySelectorAll("[data-close]");
+    const isVisible = "is-visible";
+
+    for (const el of openEls) {
+      el.addEventListener("click", function() {
+        const modalId = this.dataset.open;
+        document.getElementById(modalId).classList.add(isVisible);
+      });
+    }
+
+    for (const el of closeEls) {
+      el.addEventListener("click", function() {
+        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+      });
+    }
+
+    document.addEventListener("click", e => {
+      if (e.target == document.querySelector(".modal.is-visible")) {
+        document.querySelector(".modal.is-visible").classList.remove(isVisible);
+      }
+    });
+
+    document.addEventListener("keyup", e => {
+      // if we press the ESC
+      if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+        document.querySelector(".modal.is-visible").classList.remove(isVisible);
+      }
+    });
   </script>
 
   <!-- Earring sizing API call -->

@@ -411,14 +411,14 @@ a.offer-price-explanation:visited {
 .header--fixed {
   visibility: visible;
   position: fixed;
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .header--fadeout {
   visibility: hidden;
-  animation: fadeOut 0.5s ease-in-out;
+  animation: fadeOut 0.3s ease-in-out;
   position: fixed;
-  transition: visibility 0.5s ease-in-out;
+  transition: visibility 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -443,4 +443,63 @@ a.offer-price-explanation:visited {
     opacity: 0;
     margin-top: -30px;
   }
+}
+
+/* Modals / Light Boxes */
+.modal { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 5px;
+  background: #faf0e4;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+ 
+.modal-header {
+  background: #e3d0ba;
+}
+ 
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+}
+ 
+.modal-header .close-modal {
+  font-size: 24px;
+  border-radius: 10px;
+  background: #faf0e4;
+}
+ 
+.modal p + p {
+  margin-top: 1rem;
 }
