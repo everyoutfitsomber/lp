@@ -1,6 +1,7 @@
 /* Resets */
 html {
   font-size: 16px;
+  line-height: 1.5;
 }
 
 body {
@@ -39,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 .responsive {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 /* Main */
@@ -165,10 +167,12 @@ a.btn:hover, a.btn:active {
   padding-left: 25px
 }
 
-
-
 .pale-yellow-bg {
   background-color: #faf0e4;
+}
+
+.pale-pink-bg {
+  background-color: #ffd3b8;
 }
 
 .testimonial {
