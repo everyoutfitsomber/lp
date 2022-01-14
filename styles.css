@@ -339,6 +339,8 @@ table td.td-col-1 {
 
 .footer-item {
   padding-bottom: 12px;
+  color: #FFF;
+  cursor: pointer;
 }
 
 .footer-item a,
@@ -506,6 +508,7 @@ table td.td-col-1 {
 }
 
 .modal-back-button {
+  cursor: pointer;
   background: #C2764A;
   color: #FFF;
   text-align: center;
