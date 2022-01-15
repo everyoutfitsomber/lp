@@ -518,3 +518,10 @@ table td.td-col-1 {
   margin-bottom: 25px;
   padding: 10px;
   border-radius: 10px;
+}
+
+img.img-top-right {
+  float: right;
+  width: 80px;
+  margin-left: 15px;
+}
