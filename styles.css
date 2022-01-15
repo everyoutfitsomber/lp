@@ -524,5 +524,6 @@ img.img-top-right {
   float: right;
   width: 80px;
   margin-left: 15px;
+  margin-bottom: 20px;
   border: 4px solid #FFF;
 }
