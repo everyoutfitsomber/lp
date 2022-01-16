@@ -508,6 +508,7 @@ table td.td-col-1 {
   background: #faf0e4;
   cursor: pointer;
   text-align: center;
+  padding: 0 !important;
 }
  
 .modal p + p {
