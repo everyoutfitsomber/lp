@@ -454,9 +454,9 @@ table td.td-col-1 {
   right: 0;
   bottom: 0;
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
   justify-content: center;
-  padding: 10vh 1rem 1rem 1rem;
+  padding: 1rem;
   background: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   visibility: hidden;
@@ -496,9 +496,6 @@ table td.td-col-1 {
 }
  
 .modal-header .close-modal {
-  position: fixed;
-  top: 7%;
-  right: 1%;
   width: 40px;
   height: 40px;
   font-size: 18px;
