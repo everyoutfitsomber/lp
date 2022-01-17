@@ -270,7 +270,7 @@
     <div class="modal" id="modal1">
       <div class="modal-dialog">
         <header class="modal-header">
-          $20 Discount
+          $20 Saving
           <button class="close-modal" aria-label="close modal" data-close>✕</button>
         </header>
         <section class="modal-content">
@@ -478,21 +478,21 @@
     <div class="modal" id="modal11">
       <div class="modal-dialog">
         <header class="modal-header">
-          Influencers
+          Dear Influencers -
           <button class="close-modal" aria-label="close modal" data-close>✕</button>
         </header>
         <section class="modal-content">
-          <p>Hey Influencer!</p>
           <p><strong>Imagine a product that is such a good fit for you and your audience that you'd promote it for free...</strong></p>
           <p><strong>But even better, you'll make a bunch of money and feel great about it.</strong></p>
           <p>A cute pair of earrings is the holy grail:</p>
           <ol>
-            <li>Promote them without ever really needing to promote them: just wait for a compliment from your audience, then say "Thanks! Cute aren't they! Here's the link!"</li>
-            <li>They're on your ears, so every selfie/video post automatically showcases them.</li>
-            <li>You can feature them in any "What I'm wearing" list that accompany your posts; and/or you can directly tag the earrings in your posts.</li>
-            <li>Fitness influencers - these are perfect workout earrings. Promote them without stepping on any of your other brand agreements.</li>
-            <li>The pitch is direct, simple and they sell themselves - there's only one style of earring on our home page, so your audience doesn't have to go hunting through our site.</li>
+            <li>Maintain your integrity - it's perfectly natural to tell your audience where you got a pair of earrings from when asked (and you WILL get asked). There's no need to 'oversell' them - in fact, it's <em>better</em> when you don't.</li>
+            <li style="padding-top: 15px;">You <em>automatically</em> showcase them in all your content by virtue of wearing them.</li>
+            <li style="padding-top: 15px;">Add them to your "What I'm wearing"/gear lists that accompany your posts; and/or you can directly tag the earrings in your posts.</li>
+            <li style="padding-top: 15px;">Fitness influencers - these are perfect workout earrings. Promote them without stepping on any of your other brand agreements.</li>
+            <li style="padding-top: 15px;">These earrings sell themselves, especially so when they're endorsed by a credible source such as yourself.</li>
           </ol>
+          <p>We're new and young! Get in early and ride the wave!</p>
           <p><strong>To learn more, reach out to Annie at hello@tinystuds.com</strong></p>
           <div class="modal-back-button" data-close>&#8592; BACK</div>
         </section>
@@ -556,8 +556,16 @@
   <!-- Earring sizing API call -->
   <script async src="https://cloud.51degrees.com/api/v4/AQQnLb3NOGPwouu02Ug.js"></script>
   <script src='app.js'></script>
+
+  <!-- Live Chat -->
   <script>
-    
+    function initFreshChat() {
+      window.fcWidget.init({
+        token: "715b1b1d-5370-4413-be92-9d0c4d6666d4",
+        host: "https://wchat.freshchat.com"
+      });
+    }
+    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
   </script>
   </body>
 </html>
