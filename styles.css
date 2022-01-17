@@ -18,22 +18,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Fonts */
 @font-face {
-    font-family: 'recoletaregular';
-    src: url('fonts/recoleta_regular-webfont.woff2') format('woff2'),
-         url('fonts/recoleta_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
     font-family: 'recoletamedium';
     src: url('fonts/recoleta_medium-webfont.woff2') format('woff2'),
          url('fonts/recoleta_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('fonts/AvenirNextLTPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Responsive */
@@ -45,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main */
 body {
-  font-family: "Avenir";
+  font-family: 'Avenir Next LT Pro';
   color: #111;
 }
 
@@ -85,12 +83,6 @@ h3 {
 
 h4 {
   font-size: 22px;
-}
-
-h5 {
-  font-family: 'recoletaregular';
-  font-size: 28px;
-  padding-bottom: 25px;
 }
 
 .rating-stars {
