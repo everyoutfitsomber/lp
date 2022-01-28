@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="The Tiny Studs Company is the home to exceptional small stud earrings. Owned by a tiny team of artisans working out of their cozy Colorado studio.">
     <title>Tiny Studs™ - Exceptional Earrings</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="tinystuds-favicon.png" type="image/x-icon">
   </head>
@@ -24,20 +27,21 @@
         </div>
       </div>
       <div class="sticky-header-right-col">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-small">Checkout &#8594;</a>
+        <a href="" class="btn btn-small">Checkout &#8594;</a>
       </div>
     </div>
     <header id="header">
       <h1>TINYSTUDS</h1>
     </header>
     <section id="hero">
+
       <h2>The Classic Round<br> Stud, Reimagined.</h2>
       <div class="rating-stars">&starf;&starf;&starf;&starf;&starf;</div>
       <div class="rating-stats">4.85 out of 5 (735 Reviews)</div>
       <img class="responsive" src="images/tinystuds-hero.webp">
       <div class="hero-description">Elegant. Understated. Our take<br>on this versatile classic.</div>
       <div class="call-to-action">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-large">GET YOURS NOW &#8594;</a>
+        <a href="" class="btn btn-large">GET YOURS NOW &#8594;</a>
         <div class="under-btn">
           <div class="text-under-btn">Free shipping</div>
           <div class="dash">&#8212;</div>
@@ -102,13 +106,13 @@
       </article>
     </div>
 
-    <img class="responsive" src="images/tiny-studs-round-bezel-set-signature-14k-stud-earrings@2x.webp">
+    <img class="responsive" src="images/tiny-studs-round-bezel-set-signature-14k-stud-earrings@3x.webp">
 
     <section class="section-main pale-pink-bg">
       <h3>Get Your Pair Now</h3>
       <p>1 x Pair Signature Round Studs</p>
       <div class="call-to-action">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-large">GET YOURS NOW &#8594;</a>
+        <a href="" class="btn btn-large">GET YOURS NOW &#8594;</a>
         <div class="under-btn">
           <div class="text-under-btn">Free shipping</div>
           <div class="dash">&#8212;</div>
@@ -237,7 +241,7 @@
       <h3>Order Now</h3>
       <p>1 x Pair Signature Round Studs</p>
       <div class="call-to-action">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-large">GET YOURS NOW &#8594;</a>
+        <a href="" class="btn btn-large">GET YOURS NOW &#8594;</a>
         <div class="under-btn">
           <div class="text-under-btn">Free shipping</div>
           <div class="dash">&#8212;</div>
@@ -253,7 +257,7 @@
         <div class="footer-section">
           <div class="footer-item" data-open="modal5">Shop</div>
           <div class="footer-item" data-open="modal6">About us</div>
-          <div class="footer-item">Contact us</div>
+          <a class="footer-item contact-us" href='javascript:void(Tawk_API.toggle())'>Contact us</a>
         </div>
         <div class="footer-section">
           <div class="footer-item" data-open="modal7">Shipping & delivery</div>
@@ -488,7 +492,15 @@
         <section class="modal-content">
           <p><strong>Imagine a product that is such a good fit for you and your audience that you'd promote it for free...</strong></p>
           <p><strong>But even better, you'll make a bunch of money and feel great about it.</strong></p>
-          <p>A cute pair of earrings is the holy grail.</p>
+          <p>A cute pair of earrings is the holy grail:</p>
+          <ol>
+            <li>Maintain your integrity - it's perfectly natural to tell your audience where you got a pair of earrings from when asked (and you WILL get asked). There's no need to 'oversell' them - in fact, it's <em>better</em> when you don't.</li>
+            <li style="padding-top: 15px;">You <em>automatically</em> showcase them in all your content by virtue of wearing them.</li>
+            <li style="padding-top: 15px;">Add them to your "What I'm wearing"/gear lists that accompany your posts; and/or you can directly tag the earrings in your posts.</li>
+            <li style="padding-top: 15px;">Fitness influencers - these are perfect workout earrings. Promote them without stepping on any of your other brand agreements.</li>
+            <li style="padding-top: 15px;">These earrings sell themselves, especially so when they're endorsed by a credible source such as yourself.</li>
+          </ol>
+          <p>We're new and young! Get in early and ride the wave!</p>
           <p><strong>To learn more, reach out to Annie at hello@tinystuds.com</strong></p>
           <div class="modal-back-button" data-close>&#8592; BACK</div>
         </section>
@@ -526,18 +538,29 @@
       el.addEventListener("click", function() {
         const modalId = this.dataset.open;
         document.getElementById(modalId).classList.add(isVisible);
+        // Make body unscrollable
+        document.body.style.overflowY = 'hidden';
+        document.getElementById(modalId).children[0].scrollTo(0,0)
       });
+
+
     }
 
     for (const el of closeEls) {
       el.addEventListener("click", function() {
         this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+        // Make body scrollable
+        document.body.style.overflowY = 'scroll';
+
       });
+
     }
 
     document.addEventListener("click", e => {
       if (e.target == document.querySelector(".modal.is-visible")) {
         document.querySelector(".modal.is-visible").classList.remove(isVisible);
+        // Make body scrollable
+        document.body.style.overflowY = 'scroll';
       }
     });
 
@@ -545,6 +568,8 @@
       // if we press the ESC
       if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
         document.querySelector(".modal.is-visible").classList.remove(isVisible);
+        // Make body scrollable
+        document.body.style.overflowY = 'scroll';
       }
     });
   </script>
@@ -553,20 +578,6 @@
   <script async src="https://cloud.51degrees.com/api/v4/AQQnLb3NOGPwouu02Ug.js"></script>
   <script src='app.js'></script>
 
-  <!-- Live Chat -->
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/61e5d921b84f7301d32b82b8/1fpktgb2m';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
 
   </body>
 </html>
