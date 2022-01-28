@@ -542,6 +542,9 @@ img.img-top-right {
 
 .modal-dialog::-webkit-scrollbar {
   -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    -webkit-overflow-scrolling: auto !important;
 }
 
 .modal-dialog::-webkit-scrollbar:vertical {
