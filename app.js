@@ -38,6 +38,8 @@ document.querySelector(".contact-us").addEventListener("click", (e) => {
         }, 500);
       }
     })();
+  }else{
+    window.Tawk_API.toggle();
   }
 });
 // Live Chat
