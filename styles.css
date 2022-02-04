@@ -565,3 +565,99 @@ img.img-top-right {
   border-radius: 10px;
   background-color: #2222220e;
 } */
+
+#email-form{
+  background-color:#eeeeee;
+}
+
+.container{
+  max-width: 1180px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+#email-form .steps{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 620px;
+  margin:auto;
+}
+
+.steps h2.step-title{
+  font-size: 24px;
+  color:#444;
+  cursor: pointer;
+}
+.steps .arrow-right{
+  font-size: 30px;
+  font-weight: 900;
+}
+.steps h2.step-active{
+  color: #000;
+  border-bottom: 2.5px solid #000;
+  
+}
+
+#newletter-form-container{
+  background-color: #eeeeee;
+}
+
+#newletter-form-container .container{
+  display: flex;
+  padding-top: 0;
+}
+
+.newsletter-form{
+  padding: 60px;
+}
+
+.newsletter-form h3{
+  font-size: 50px;
+  padding-bottom: 0;
+  line-height: 1.2;
+}
+
+.newsletter-form .user-email-input{
+  width: 100%;
+  border-color: transparent;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.proceed-to-checkout-btn{
+  background: #ffd3b8;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 1rem;
+  border-radius:25px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.proceed-to-checkout-btn:hover{
+  background-color: rgb(243, 199, 172);
+  color: #000;
+  cursor: pointer;
+}
+
+.call-to-action-text{
+  color:#ffd3b8;
+}
+
+.newsletter-form p {
+  font-size: 18px;
+}
+.newsletter-image{
+  overflow: hidden;
+  border-radius: 50%;
+  width: 499px;
+  height: 509px;
+  box-shadow: -1px 5px 12px 0px rgba(0,0,0,0.05);
+}
+
+.newsletter-image img{
+  height: 100%;
+  width: 100%;
+}
