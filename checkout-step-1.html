@@ -11,247 +11,62 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="tinystuds-favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
-    <div id="sticky-header" class="header--fadeout">
-      <div class="sticky-header-left-col">
-        <div class="sticky-header-price">
-          <div class="sticky-header-content-line-1">
-            <span class="full-price">$67</span>
-            <span class="offer-price">$47</span
-            ><span class="free-shipping"> + free shipping</span>
-          </div>
-          <div style="margin-top: -5px;">
-            <span class="offer-price-explanation" data-open="modal1">Why the $20 saving?</span>
-        </div>
-        </div>
-      </div>
-      <div class="sticky-header-right-col">
-        <a href="checkout-step-1.html" class="btn btn-small">Checkout &#8594;</a>
-      </div>
-    </div>
+
     <header id="header">
       <h1>TINYSTUDS</h1>
     </header>
-    <section id="hero">
-
-      <h2>The Classic Round<br> Stud, Reimagined.</h2>
-      <div class="rating-stars">&starf;&starf;&starf;&starf;&starf;</div>
-      <div class="rating-stats">4.85 out of 5 (826 Reviews)</div>
-      <img class="responsive" src="images/tinystuds-hero.webp">
-      <div class="hero-description">Elegant. Understated. Our take<br>on this versatile classic.</div>
-      <div class="call-to-action">
-        <a href="checkout-step-1.html" class="btn btn-large">GET YOURS NOW &#8594;</a>
-        <div class="under-btn">
-          <div class="text-under-btn">Free shipping</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">In stock, ready to ship</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">Next-day dispatch from our Studio</div>
+    
+    <section id="email-form">
+        <div class="container">
+            <div class="steps">
+                <div class="step-1">
+                    <h2 class="step-title step-active">Provide Email</h2>
+                </div>
+                <span class="arrow-right">→</span>
+                <div class="step-2">
+                    <h2 class="step-title">Checkout</h2>
+                </div>
+                <span class="arrow-right">→</span>
+                <div class="step-3">
+                    <h2 class="step-title">Order Complete</h2>
+                </div>
+            </div>
         </div>
-        <!--<div class="text-under-btn">Order within 2 hrs and 3 mins<br> for dispatch today.</div>-->
-      </div>
-    </section>
-    <section>
-      <div class="testimonial">
-        <article>
-          <div class="testimonial-content">
-            The best earrings I've ever owned.
-          </div>
-          <div class="testimonial-author">
-            Emma B. (Phoenix, U.S.)
-          </div>
-          <div class="testimonial-close"></div>
-        </article>
-      </div>
-      <img class="responsive" src="images/tinystuds-on-ear@2x.webp">
-    </section>
-    <section class="section-main">
-      <h3>Unmatched Sparkle.<br> Guaranteed.</h3>
-      <p>Our secret?<br> <span style="font-weight: 600;">Teeny Tiny Bezels</span></p>
-      <div class="down-arrow">&darr;</div>
-      <p>We spent seven months<br> developing them.</p>
-      <div class="down-arrow">&darr;</div>
-      <p>It means we can house<br> a 56% larger gemstone<br> than anybody else.</p>
-      <div class="down-arrow">&darr;</div>
-      <p>More gemstone = more sparkle</p>
-      <div class="down-arrow">&darr;</div>
-      <p>And that's huge for small studs,<br> which have to fight hard<br> for their sparkle.</p>
-      <img style="margin-top: 80px; margin-bottom: 40px;" class="responsive" src="images/tinystuds-bezel-comparison@3x.webp">
-      <p>Standard-sized bezels can be stunning on larger jewelry pieces. But on small dainty earrings, the gemstone ends up being too small and lacklustre.</p>
-      <p style="padding-bottom: 20px;">Leaf-thin bezels are the secret to our Signature studs' outstanding sparkle.</p>
-      <span class="small-popup-button" data-open="modal2" style="padding: 9px 15px 9px 15px;">more about our bezels &#8594;</span>
     </section>
 
-    <div class="testimonial">
-      <article>
-        <div class="testimonial-content testimonial-smaller-text">
-          These things POP!<br> They get tons of compliments!<br> 🥰
-        </div>
-        <div class="testimonial-author">
-          Sofia DeAngelo (San Diego, U.S.)
-        </div>
-        <div class="testimonial-close"></div>
-      </article>
-    </div>
-    <div class="testimonial">
-      <article>
-        <div class="testimonial-content testimonial-smaller-text">
-          Crazy sparkle!
-        </div>
-        <div class="testimonial-author">
-          Katherine B. (Austin, U.S.)
-        </div>
-        <div class="testimonial-close"></div>
-      </article>
-    </div>
 
-    <img class="responsive" src="images/tiny-studs-round-bezel-set-signature-14k-stud-earrings@2x.webp">
-
-    <section class="section-main pale-pink-bg">
-      <h3>Get Your Pair Now</h3>
-      <p>1 x Pair Signature Round Studs</p>
-      <div class="call-to-action">
-        <a href="checkout-step-1.html" class="btn btn-large">GET YOURS NOW &#8594;</a>
-        <div class="under-btn">
-          <div class="text-under-btn">Free shipping</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">In stock, ready to ship</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">Next-day dispatch from our Studio</div>
+    <section id="newletter-form-container">
+        <div class="container">
+            <div class="newsletter-image">
+                <img src="images/tiny-studs-round-bezel-set-signature-14k-stud-earrings.jpg" alt="">
+            </div>   
+                
+            <form id="email_signup" class="klaviyo_styling klaviyo_gdpr_embed_LIST_ID newsletter-form" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" novalidate="novalidate">
+                <input type="hidden" name="g" value="TksrLy">
+                <h3 class="form-title"><span class="call-to-action-text">Subscribe</span> to Our<br>Newsletter</h2>
+                <p>Stay up-to-date with all of our <br>exciting news and offers!</p>
+                <input type="email" value="" placeholder="Email Address" class="user-email-input" name="email" id="k_id_email" required>
+                <input type='submit' class="proceed-to-checkout-btn " value="Proceed to checkout">
+            </form>
+            <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+            <script type="text/javascript">
+                KlaviyoSubscribe.attachToForms('#email_signup', {
+                hide_form_on_success: true,
+                extra_properties: {
+                    $source: '$embed',
+                    $method_type: "Custom Shopify Form",
+                    $method_id: 'embed',
+                },
+                success: function ($form) {
+                 window.location.href = `http://tinystuds.com/cart/40185303498939:1?checkout[email]=${document.querySelector('#k_id_email').value}&discount=packaging`;
+                }
+                });
+            </script>
         </div>
-      </div>
     </section>
-
-    <section class="section-main pale-yellow-bg">
-      <h3>The Perfect Dainty Size</h3>
-      <p><strong>3mm diameter</strong></p>
-      <p>Small enough to be ever-so-<br> cute and dainty.</p>
-      <p>Large enough not to look<br> lost on your ear when worn<br> by themselves.</p>
-      <div id="accurate">
-      <div class="horizontal-line"></div>
-        <p>Here's their <strong>actual size:</strong></p>
-        <div class="down-arrow light-grey">&darr;</div>
-        <div class="to-scale-studs">
-          <span class="circle circle-left"></span>
-          <span class="circle circle-right"></span>
-        </div>
-        <p><em>An exact representation of their<br> 3mm diameter. Compare next to an<br> existing pair of studs you own.</em></p>
-        <!--<p><strong>10mm posts</strong></p>
-        <p>Slightly short posts are<br> comfortable for sleeping.</p>-->
-      </div>
-    </section>
-
-    <section class="section-main section-text-left">
-      <h3 style="padding-bottom: 40px;">Description</h3>
-      <h4>3mm Signature Round Bezel-Set Stud Earrings</h4>
-      <p><em>Understated elegance. Exquisitely crafted for every-day wear.</em></p>
-      <table style="width: 100%;">
-        <tbody>
-          <tr>
-            <td class="td-col-1">Size</td>
-            <td>3mm (1/8")</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Color</td>
-            <td>14k yellow gold</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Setting</td>
-            <td>Bezel setting</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Material</td>
-            <td>14k gold over ultra-hypoallergenic base<br> <span class="small-popup-button" data-open="modal3" >learn more &#8594;</span></td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Finish</td>
-            <td>Medium polish - not overly shiny</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Gemstone</td>
-            <td>0.1 carat eco-zirconia&#8482;<br> <span class="small-popup-button" data-open="modal4" >learn more &#8594;</span></td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Backs</td>
-            <td>Butterfly backs (6 x 4.5mm)</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Post length</td>
-            <td>10mm</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Post width</td>
-            <td>0.8mm (21 gauge)</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Tarnish resistance</td>
-            <td>5 out of 5</td>
-          </tr>
-          <tr>
-            <td class="td-col-1">Wear in water?</td>
-            <td>Yes</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><strong>Other stats:</strong></p>
-      <p>Time spent developing: 7 months</p>
-      <p>Number of prototypes: 12</p>
-      <p>Number of design choices: 100+</p>
-      <p>Times we almost gave up: 3</p>
-
-    </section>
-
-    <div class="testimonial">
-      <article>
-        <div class="testimonial-content testimonial-smaller-text">
-          I put mine in the day I got them.<br> I've yet to take them out.<br> So cute!
-        </div>
-        <div class="testimonial-author">
-          Nicole T. (Miami, U.S.)
-        </div>
-        <div class="testimonial-close"></div>
-      </article>
-    </div>
-
-    <div class="testimonial">
-      <article>
-        <div class="testimonial-content testimonial-smaller-text">
-          I love how versatile they are!<br> Casual enough for the gym.<br> Dressy enough for a night out.
-        </div>
-        <div class="testimonial-author">
-          Kali B. (Boulder, U.S.)
-        </div>
-        <div class="testimonial-close"></div>
-      </article>
-    </div>
-
-    <section class="section-main" style="min-height: 1200px;">
-      <h3>Reviews</h3>
-    </section>
-
-    <section class="section-main pale-yellow-bg">
-      <h3>90-Day Free Returns</h3>
-      <!-- https://www.flaticon.com/free-icon/return-box_645084# -->
-      <img style="width: 100px;" src="images/return-box.webp">
-      <p>Return for any reason.<br> No limitations.</p>
-    </section>
-
-    <section class="section-main" style="padding-bottom: 100px;">
-      <h3>Order Now</h3>
-      <p>1 x Pair Signature Round Studs</p>
-      <div class="call-to-action">
-        <a href="checkout-step-1.html" class="btn btn-large">GET YOURS NOW &#8594;</a>
-        <div class="under-btn">
-          <div class="text-under-btn">Free shipping</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">In stock, ready to ship</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">Next-day dispatch from our Studio</div>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <div id="footer">
         <div class="footer-section">
@@ -500,77 +315,31 @@
       </div>
     </div>
 
-  <!-- 
-    Script to make sticky header appear on scroll.
-    Set to appear after first on-ear shot has been scrolled past.
-  -->
-  <script>
-    window.onscroll = function () {
-      fixedHeader();
-    };
+    <!-- <script>
+        
+document.querySelector('#email_signup').addEventListener('submit', e=>{
+  e.preventDefault();
 
-    function fixedHeader() {
-      if (
-        document.body.scrollTop > 1300 ||
-        document.documentElement.scrollTop > 1300
-      ) {
-        document.getElementById("sticky-header").className = "header--fixed";
-      } else {
-        document.getElementById("sticky-header").className = "header--fadeout";
-      }
+
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://manage.kmail-lists.com/ajax/subscriptions/subscribe",
+        "method": "POST",
+        "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "cache-control": "no-cache"
+        },
+        "data": {
+        "g": "V8Sjh3",
+        "email": `${document.querySelector('#k_id_email').innerText}`,
+        }
     }
-  </script>
-
-  <!-- Modal Boxes -->
-  <script>
-    const openEls = document.querySelectorAll("[data-open]");
-    const closeEls = document.querySelectorAll("[data-close]");
-    const isVisible = "is-visible";
-
-    for (const el of openEls) {
-      el.addEventListener("click", function() {
-        const modalId = this.dataset.open;
-        document.getElementById(modalId).classList.add(isVisible);
-        // Make body unscrollable
-        document.body.style.overflowY = 'hidden';
-        document.getElementById(modalId).children[0].scrollTo(0,0)
-      });
-
-
-    }
-
-    for (const el of closeEls) {
-      el.addEventListener("click", function() {
-        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-        // Make body scrollable
-        document.body.style.overflowY = 'scroll';
-
-      });
-
-    }
-
-    document.addEventListener("click", e => {
-      if (e.target == document.querySelector(".modal.is-visible")) {
-        document.querySelector(".modal.is-visible").classList.remove(isVisible);
-        // Make body scrollable
-        document.body.style.overflowY = 'scroll';
-      }
+    console.log(settings)
+    $.ajax(settings).done(function (response) {
+        console.log(response);
     });
-
-    document.addEventListener("keyup", e => {
-      // if we press the ESC
-      if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-        document.querySelector(".modal.is-visible").classList.remove(isVisible);
-        // Make body scrollable
-        document.body.style.overflowY = 'scroll';
-      }
-    });
-  </script>
-
-  <!-- Earring sizing API call -->
-  <script async src="https://cloud.51degrees.com/api/v4/AQQnLb3NOGPwouu02Ug.js"></script>
-  <script src='app.js'></script>
-
-
+})
+    </script> -->
   </body>
 </html>
