@@ -668,7 +668,7 @@ img.img-top-right {
 }
 
 #k_id_email:focus{
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8)
+  box-shadow: 0px 0px 10px rgb(154, 166, 255)
 }
 
 @media (max-width:625px){
