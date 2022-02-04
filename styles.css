@@ -610,6 +610,8 @@ img.img-top-right {
 
 .newsletter-form{
   padding: 60px;
+  font-family: inherit !important;
+    max-width: initial !important;
 }
 
 .newsletter-form h3{
