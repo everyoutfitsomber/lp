@@ -663,3 +663,35 @@ img.img-top-right {
   height: 100%;
   width: 100%;
 }
+#k_id_email{
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+#k_id_email:focus{
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8)
+}
+
+@media (max-width:625px){
+
+  .container{
+    padding: 30px 0;
+  }
+  #email-form .steps h2{
+    font-size: 18px;
+  }
+  #newletter-form-container .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter-image{
+    width: 250px;
+    height:auto;
+  }
+
+  .newsletter-form{
+    padding: 20px 60px;
+    text-align: center;
+  }
+}
