@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="The Tiny Studs Company is the home to exceptional small stud earrings. Owned by a tiny team of artisans working out of their cozy Colorado studio.">
     <title>Tiny Studs™ - Exceptional Earrings</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="tinystuds-favicon.png" type="image/x-icon">
   </head>
@@ -24,91 +27,128 @@
         </div>
       </div>
       <div class="sticky-header-right-col">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-small">Checkout &#8594;</a>
+        <a href="checkout-step-1.html" class="btn btn-small">Checkout &#8594;</a>
       </div>
     </div>
     <header id="header">
       <h1>TINYSTUDS</h1>
     </header>
     <section id="hero">
-      <h2>The Classic Round<br> Stud, Reimagined.</h2>
-      <div class="rating-stars">&starf;&starf;&starf;&starf;&starf;</div>
-      <div class="rating-stats">4.85 out of 5 (735 Reviews)</div>
-      <img class="responsive" src="images/tinystuds-hero.webp">
-      <div class="hero-description">Elegant. Understated. Our take<br>on this versatile classic.</div>
-      <div class="call-to-action">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-large">GET YOURS NOW &#8594;</a>
-        <div class="under-btn">
-          <div class="text-under-btn">Free shipping</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">In stock, ready to ship</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">Next-day dispatch from our Studio</div>
+      <div class="container">
+        <div class="text">
+          <h2>The Classic Round<br class="mobile-break"> Stud,<br class="desktop-break"> Reimagined.</h2>
+          <div id="judgeme_badge_placeholder"></div>
+          <div class="rating-stats">4.85 out of 5 (735 Reviews)</div>
+          <img class="responsive mobile-hero-image" src="images/tinystuds-hero.webp">
+          <div class="hero-description">Elegant. Understated. Our take<br class="mobile-break"> on this<br class="desktop-break"> versatile classic.</div>
+          <div class="call-to-action">
+            <a href="checkout-step-1.html" class="btn btn-large">GET YOURS NOW &#8594;</a>
+            <div class="under-btn">
+              <div class="shipping-notice">FREE shipping. Ships <span class='day-designator'></span>, <span class="ship-date"></span>. <br><span class='order-deadline'>Order within <span class="shipping-deadline"><span id='hour'></span> hrs <span id='minutes'></span> mins <span id='seconds'></span> seconds</span></span></div>
+            </div>
+            <!--<div class="text-under-btn">Order within 2 hrs and 3 mins<br> for dispatch today.</div>-->
+          </div>
         </div>
-        <!--<div class="text-under-btn">Order within 2 hrs and 3 mins<br> for dispatch today.</div>-->
+        <div class="desktop-hero-image">
+          <img class="responsive" src="images/tinystuds-hero.webp">
+        </div>
+
       </div>
+
     </section>
-    <section>
-      <div class="testimonial">
-        <article>
-          <div class="testimonial-content">
-            The best earrings I've ever owned.
-          </div>
-          <div class="testimonial-author">
-            Emma B. (Phoenix, U.S.)
-          </div>
-          <div class="testimonial-close"></div>
-        </article>
+    <section id="testimonials-section">
+      <div class="container">
+        <div class="testimonial">
+          <article>
+            <div class="testimonial-content">
+              The best earrings I've ever owned.
+            </div>
+            <div class="testimonial-author">
+              Emma B. (Phoenix, U.S.)
+            </div>
+            <div class="testimonial-close"></div>
+          </article>
+        </div>
+        <img class="responsive" src="images/tinystuds-on-ear@2x.webp">
       </div>
-      <img class="responsive" src="images/tinystuds-on-ear@2x.webp">
+
     </section>
-    <section class="section-main">
-      <h3>Unmatched Sparkle.<br> Guaranteed.</h3>
-      <p>Our secret?<br> <span style="font-weight: 600;">Teeny Tiny Bezels</span></p>
-      <div class="down-arrow">&darr;</div>
-      <p>We spent seven months<br> developing them.</p>
-      <div class="down-arrow">&darr;</div>
-      <p>It means we can house<br> a 56% larger gemstone<br> than anybody else.</p>
-      <div class="down-arrow">&darr;</div>
-      <p>More gemstone = more sparkle</p>
-      <div class="down-arrow">&darr;</div>
-      <p>And that's huge for small studs,<br> which have to fight hard<br> for their sparkle.</p>
-      <img style="margin-top: 80px; margin-bottom: 40px;" class="responsive" src="images/tinystuds-bezel-comparison@3x.webp">
-      <p>Standard-sized bezels can be stunning on larger jewelry pieces. But on small dainty earrings, the gemstone ends up being too small and lacklustre.</p>
-      <p style="padding-bottom: 20px;">Leaf-thin bezels are the secret to our Signature studs' outstanding sparkle.</p>
-      <span class="small-popup-button" data-open="modal2" style="padding: 9px 15px 9px 15px;">more about our bezels &#8594;</span>
+    <section id="comparison-section" class="section-main">
+      <div class="container">
+        <div class="about-product">
+          <h3>Unmatched Sparkle.<br> Guaranteed.</h3>
+          <p>Our secret?<br> <span style="font-weight: 600;">Teeny Tiny Bezels</span></p>
+          <div class="down-arrow">&darr;</div>
+          <p>We spent seven months<br> developing them.</p>
+          <div class="down-arrow">&darr;</div>
+          <p>It means we can house<br> a 56% larger gemstone<br> than anybody else.</p>
+          <div class="down-arrow">&darr;</div>
+          <p>More gemstone = more sparkle</p>
+          <div class="down-arrow">&darr;</div>
+          <p>And that's huge for small studs,<br> which have to fight hard<br> for their sparkle.</p>
+          
+        </div>
+        <div class="comparison-img">
+          <img class="responsive" src="images/tinystuds-bezel-comparison@3x.webp">
+          <div class="more-about-bezels more-about-bezels-1">
+            <p>Standard-sized bezels can be stunning on larger jewelry pieces. But on small dainty earrings, the gemstone ends up being too small and lacklustre.</p>
+            <p style="padding-bottom: 20px;">Leaf-thin bezels are the secret to our Signature studs' outstanding sparkle.</p>
+            <span class="small-popup-button" data-open="modal2" style="padding: 9px 15px 9px 15px;">more about our bezels &#8594;</span>
+          </div>
+  
+        </div>
+      </div>
+
+
+
+     
+      
     </section>
 
-    <div class="testimonial">
-      <article>
-        <div class="testimonial-content testimonial-smaller-text">
-          These things POP!<br> They get tons of compliments!<br> 🥰
+    <section id="second-testimonials-section">
+      <div class="container">
+        <div class="testimonials">
+          <div class="more-about-bezels more-about-bezels-2">
+            <p>Standard-sized bezels can be stunning on larger jewelry pieces. But on small dainty earrings, the gemstone ends up being too small and lacklustre.</p>
+            <p class="pb-20">Leaf-thin bezels are the secret to our Signature studs' outstanding sparkle.</p>
+            <span class="small-popup-button" data-open="modal2" style="padding: 9px 15px 9px 15px;">more about our bezels &#8594;</span>
+          </div>
+          <div class="testimonial">
+            <article>
+              <div class="testimonial-content testimonial-smaller-text">
+                These things POP!<br> They get tons of compliments!<br> 🥰
+              </div>
+              <div class="testimonial-author">
+                Sofia DeAngelo (San Diego, U.S.)
+              </div>
+              <div class="testimonial-close"></div>
+            </article>
+          </div>
+          <div class="testimonial">
+            <article>
+              <div class="testimonial-content testimonial-smaller-text">
+                Crazy sparkle!
+              </div>
+              <div class="testimonial-author">
+                Katherine B. (Austin, U.S.)
+              </div>
+              <div class="testimonial-close no-bottom-border"></div>
+            </article>
+          </div>
         </div>
-        <div class="testimonial-author">
-          Sofia DeAngelo (San Diego, U.S.)
-        </div>
-        <div class="testimonial-close"></div>
-      </article>
-    </div>
-    <div class="testimonial">
-      <article>
-        <div class="testimonial-content testimonial-smaller-text">
-          Crazy sparkle!
-        </div>
-        <div class="testimonial-author">
-          Katherine B. (Austin, U.S.)
-        </div>
-        <div class="testimonial-close"></div>
-      </article>
-    </div>
+  
+    
+        <img class="responsive" src="images/tiny-studs-round-bezel-set-signature-14k-stud-earrings@2x.webp">
+      </div>
 
-    <img class="responsive" src="images/tiny-studs-round-bezel-set-signature-14k-stud-earrings@2x.webp">
+    </section>
+
 
     <section class="section-main pale-pink-bg">
       <h3>Get Your Pair Now</h3>
       <p>1 x Pair Signature Round Studs</p>
       <div class="call-to-action">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-large">GET YOURS NOW &#8594;</a>
+        <a href="checkout-step-1.html" class="btn btn-large">GET YOURS NOW &#8594;</a>
         <div class="under-btn">
           <div class="text-under-btn">Free shipping</div>
           <div class="dash">&#8212;</div>
@@ -138,10 +178,13 @@
       </div>
     </section>
 
-    <section class="section-main section-text-left">
-      <h3 style="padding-bottom: 40px;">Description</h3>
-      <h4>3mm Signature Round Bezel-Set Stud Earrings</h4>
-      <p><em>Understated elegance. Exquisitely crafted for every-day wear.</em></p>
+    <section id='product-description' class="section-main section-text-left">
+      <div class="description-header">
+        <h3 style="padding-bottom: 40px;">Description</h3>
+        <h4>3mm Signature Round Bezel-Set Stud Earrings</h4>
+        <p><em>Understated elegance. Exquisitely crafted for every-day wear.</em></p>
+      </div>
+
       <table style="width: 100%;">
         <tbody>
           <tr>
@@ -189,12 +232,16 @@
             <td>Yes</td>
           </tr>
         </tbody>
+
       </table>
-      <p><strong>Other stats:</strong></p>
-      <p>Time spent developing: 7 months</p>
-      <p>Number of prototypes: 12</p>
-      <p>Number of design choices: 100+</p>
-      <p>Times we almost gave up: 3</p>
+      <div class="other-stats">
+        <p><strong>Other stats:</strong></p>
+        <p>Time spent developing: 7 months</p>
+        <p>Number of prototypes: 12</p>
+        <p>Number of design choices: 100+</p>
+        <p>Times we almost gave up: 3</p>
+      </div>
+
 
     </section>
 
@@ -224,36 +271,41 @@
 
     <section class="section-main" style="min-height: 1200px;">
       <h3>Reviews</h3>
-    </section>
+      <div id="judgeme_widget_placeholder"></div>
 
-    <section class="section-main pale-yellow-bg">
-      <h3>90-Day Free Returns</h3>
-      <!-- https://www.flaticon.com/free-icon/return-box_645084# -->
-      <img style="width: 100px;" src="images/return-box.webp">
-      <p>Return for any reason.<br> No limitations.</p>
     </section>
-
-    <section class="section-main" style="padding-bottom: 100px;">
-      <h3>Order Now</h3>
-      <p>1 x Pair Signature Round Studs</p>
-      <div class="call-to-action">
-        <a href="http://tinystuds.com/cart/40185303498939:1?discount=packaging" class="btn btn-large">GET YOURS NOW &#8594;</a>
-        <div class="under-btn">
-          <div class="text-under-btn">Free shipping</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">In stock, ready to ship</div>
-          <div class="dash">&#8212;</div>
-          <div class="text-under-btn">Next-day dispatch from our Studio</div>
+    <div id="order-now">
+      <section class="section-main pale-yellow-bg">
+        <h3>90-Day Free Returns</h3>
+        <!-- https://www.flaticon.com/free-icon/return-box_645084# -->
+        <img style="width: 100px;" src="images/return-box.webp">
+        <p>Return for any reason.<br> No limitations.</p>
+      </section>
+  
+      <section class="section-main" style="padding-bottom: 100px;">
+        <h3>Order Now</h3>
+        <p>1 x Pair Signature Round Studs</p>
+        <div class="call-to-action">
+          <a href="checkout-step-1.html" class="btn btn-large">GET YOURS NOW &#8594;</a>
+          <div class="under-btn">
+            <div class="text-under-btn">Free shipping</div>
+            <div class="dash">&#8212;</div>
+            <div class="text-under-btn">In stock, ready to ship</div>
+            <div class="dash">&#8212;</div>
+            <div class="text-under-btn">Next-day dispatch from our Studio</div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
+
 
     <footer>
       <div id="footer">
         <div class="footer-section">
           <div class="footer-item" data-open="modal5">Shop</div>
           <div class="footer-item" data-open="modal6">About us</div>
-          <div class="footer-item">Contact us</div>
+          <a class="footer-item contact-us">Contact us</a>
         </div>
         <div class="footer-section">
           <div class="footer-item" data-open="modal7">Shipping & delivery</div>
@@ -488,7 +540,8 @@
         <section class="modal-content">
           <p><strong>Imagine a product that is such a good fit for you and your audience that you'd promote it for free...</strong></p>
           <p><strong>But even better, you'll make a bunch of money and feel great about it.</strong></p>
-          <p>A cute pair of earrings is the holy grail.</p>
+          <p>A cute pair of earrings is the holy grail:</p>
+
           <p><strong>To learn more, reach out to Annie at hello@tinystuds.com</strong></p>
           <div class="modal-back-button" data-close>&#8592; BACK</div>
         </section>
@@ -526,18 +579,29 @@
       el.addEventListener("click", function() {
         const modalId = this.dataset.open;
         document.getElementById(modalId).classList.add(isVisible);
+        // Make body unscrollable
+        document.body.style.overflowY = 'hidden';
+        document.getElementById(modalId).children[0].scrollTo(0,0)
       });
+
+
     }
 
     for (const el of closeEls) {
       el.addEventListener("click", function() {
         this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+        // Make body scrollable
+        document.body.style.overflowY = 'scroll';
+
       });
+
     }
 
     document.addEventListener("click", e => {
       if (e.target == document.querySelector(".modal.is-visible")) {
         document.querySelector(".modal.is-visible").classList.remove(isVisible);
+        // Make body scrollable
+        document.body.style.overflowY = 'scroll';
       }
     });
 
@@ -545,28 +609,18 @@
       // if we press the ESC
       if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
         document.querySelector(".modal.is-visible").classList.remove(isVisible);
+        // Make body scrollable
+        document.body.style.overflowY = 'scroll';
       }
     });
   </script>
 
   <!-- Earring sizing API call -->
   <script async src="https://cloud.51degrees.com/api/v4/AQQnLb3NOGPwouu02Ug.js"></script>
+  <script src="moment.min.js"></script>
+  <script src="moment-timezone-with-data-1970-2030.min.js"></script>
   <script src='app.js'></script>
 
-  <!-- Live Chat -->
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/61e5d921b84f7301d32b82b8/1fpktgb2m';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
 
   </body>
 </html>
